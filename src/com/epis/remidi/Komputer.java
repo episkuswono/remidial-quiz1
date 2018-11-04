@@ -12,5 +12,7 @@ package com.epis.remidi;
 public class Komputer {
     private String kode;
     private int harga;
-    
+    private Cpu proc;
+    private Monitor mon;
+    private Printer prin;
 }
