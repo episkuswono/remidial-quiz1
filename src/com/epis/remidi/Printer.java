@@ -17,4 +17,7 @@ public class Printer {
         this.tipe = tipe;
     }
     
+    public void specPrinter(){
+        System.out.println(this.merk+" "+this.tipe);
+    }
 }
