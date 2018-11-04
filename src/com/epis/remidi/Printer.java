@@ -11,10 +11,12 @@ package com.epis.remidi;
  */
 public class Printer {
     private String merk, tipe;
+    private int harga;
 
-    public Printer(String merk, String tipe) {
+    public Printer(String merk, String tipe, int harga) {
         this.merk = merk;
         this.tipe = tipe;
+        this.harga = harga;
     }
     
     public void specPrinter(){
