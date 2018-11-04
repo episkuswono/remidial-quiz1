@@ -17,8 +17,27 @@ public class Cpu {
         this.merk = merk;
         this.kecepatan = kecepatan;
     }
+
+    public String getMerk() {
+        return merk;
+    }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+
+    public int getKecepatan() {
+        return kecepatan;
+    }
+
+    public void setKecepatan(int kecepatan) {
+        this.kecepatan = kecepatan;
+    }
     
-    public void specCpu(){
-        System.out.println(this.merk+" "+this.kecepatan);
+    public String info(){
+        String info = "";
+        info += "Merk: "+ this.merk + "\n";
+        info += "Kecepatan:"
+        
     }
 }
