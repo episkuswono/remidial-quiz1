@@ -11,4 +11,12 @@ package com.epis.remidi;
  */
 public class Monitor {
     private String merk;
+
+    public Monitor(String merk) {
+        this.merk = merk;
+    }
+    
+    public void specMonitor(){
+        System.out.println(this.merk);
+    }
 }
