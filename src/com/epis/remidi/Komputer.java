@@ -15,14 +15,6 @@ public class Komputer {
     private Cpu proc;
     private Monitor mon;
     private Printer prin;
-    
-    public Komputer(String kode, int harga, Cpu proc, Monitor mon) {
-        this.kode = kode;
-        this.harga = harga;
-        this.proc = proc;
-        this.mon = mon;
-        this.prin = prin;
-    }
 
     public Komputer(String kode, int harga, Cpu proc, Monitor mon, Printer prin) {
         this.kode = kode;
