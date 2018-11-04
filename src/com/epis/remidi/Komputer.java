@@ -27,7 +27,7 @@ public class Komputer {
     public String info(){
         String info = "";
         info += "Kode: "+ this.kode + "\n";
-        info += "Harga: "+ this.harga + "\n";
+        info += "Harga: "+"Rp."+ this.harga + "\n";
         info += "CPU : "+ this.proc.info() + "\n";
         info += "Monitor : "+ this.mon.info() + "\n";
         info += "Printer : "+ this.prin.info() + "\n";

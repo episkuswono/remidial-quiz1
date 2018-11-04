@@ -47,7 +47,7 @@ public class Printer {
         String info = "";
         info += "Merk: "+ this.merk + "\n";
         info += "Tipe: "+ this.tipe + "\n";
-        info += "Harga: "+ this.harga + "\n";
+        info += "Harga: "+"Rp."+ this.harga + "\n";
         return info;
     }
 }
