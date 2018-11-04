@@ -17,8 +17,27 @@ public class Monitor {
         this.merk = merk;
         this.harga = harga;
     }
+
+    public String getMerk() {
+        return merk;
+    }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
     
-    public void specMonitor(){
-        System.out.println(this.merk+" "+this.harga);
+    public String info(){
+        String info = "";
+        info += "Merk: "+ this.merk + "\n";
+        info += "Harga: "+ this.harga + "\n";
+        return info;
     }
 }

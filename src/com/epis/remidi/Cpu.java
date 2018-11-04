@@ -37,7 +37,7 @@ public class Cpu {
     public String info(){
         String info = "";
         info += "Merk: "+ this.merk + "\n";
-        info += "Kecepatan:"
-        
+        info += "Kecepatan: "+ this.kecepatan + "\n";
+        return info;
     }
 }
