@@ -15,13 +15,30 @@ public class Komputer {
     private Cpu proc;
     private Monitor mon;
     private Printer prin;
-
-    public Komputer(String kode, int harga) {
+    
+    public Komputer(String kode, int harga, Cpu proc, Monitor mon) {
         this.kode = kode;
         this.harga = harga;
-        proc = new Cpu("core I7 7700", 3000000);
-        mon = new Monitor("Sony Multiscan", 500000);
-        prin = new Printer("Epson L300","Color", 250000);
+        this.proc = proc;
+        this.mon = mon;
+        this.prin = prin;
+    }
+
+    public Komputer(String kode, int harga, Cpu proc, Monitor mon, Printer prin) {
+        this.kode = kode;
+        this.harga = harga;
+        this.proc = proc;
+        this.mon = mon;
+        this.prin = prin;
     }
     
+    public String info(){
+        String info = "";
+        info += "Kode: "+ this.kode + "\n";
+        info += "Harga: "+ this.harga + "\n";
+        info += "CPU : "+ this.proc.info() + "\n";
+        info += "Monitor : "+ this.mon.info() + "\n";
+        info += "Printer : "+ this.prin.info() + "\n";
+        return info;
+    }
 }
