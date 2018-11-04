@@ -18,8 +18,36 @@ public class Printer {
         this.tipe = tipe;
         this.harga = harga;
     }
+
+    public String getMerk() {
+        return merk;
+    }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+
+    public String getTipe() {
+        return tipe;
+    }
+
+    public void setTipe(String tipe) {
+        this.tipe = tipe;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
     
-    public void specPrinter(){
-        System.out.println(this.merk+" "+this.tipe);
+    public String info(){
+        String info = "";
+        info += "Merk: "+ this.merk + "\n";
+        info += "Tipe: "+ this.tipe + "\n";
+        info += "Harga: "+ this.harga + "\n";
+        return info;
     }
 }
